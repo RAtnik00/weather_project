@@ -1,4 +1,6 @@
 import os
-from app.config import OPENWEATHER_API_KEY
+from dotenv import load_dotenv
+
+load_dotenv()
 
 OPENWEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY")
